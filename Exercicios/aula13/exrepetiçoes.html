@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        c = 1
+        document.write(`<h1>teste logico no começo</h1>`)
+while(c <= 10){
+    document.write(`<p>passo ${c} </p>`) 
+    c++
+}
+
+document.write(`<h1>teste logico no final</h1>`)
+c = 1
+do{
+    document.write(`<p>passo ${c} </p>`)
+    c++
+
+}while(c <= 10)
+  // Escreve um título na página
+  document.write(`<h1>teste logico com loop for</h1>`);
+
+  // Inicia o loop for com a variável de controle "c" definida como 1
+  // Define a condição de continuação: enquanto "c" for menor ou igual a 10, o loop continuará
+  // A cada iteração do loop, a variável de controle "c" será incrementada em 1 (c++)
+  for (let c = 1; c <= 10; c++) {
+    // O código dentro do loop é executado a cada iteração
+    // Escreve na página o valor da variável de controle "c" entre as tags <p>
+    document.write(`<p>passo ${c}</p>`);
+  }
+    </script>
+</body>
+</html>

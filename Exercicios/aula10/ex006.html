@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1.0">
+    <title>Evento Dom</title>
+    <style>
+        div#area{
+            font:normal 18pt arial;
+            background: rgb(0, 4, 255);
+            color: rgb(243, 243, 243);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <div id="area">
+        interaja
+    </div>
+    <script>
+            var corpo = document.getElementById("corpo");
+            corpo.style.backgroundColor = "black"; // Altere a cor conforme desejado
+        var area = document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'clicou!'
+            area.style.background = 'aqua'
+        }
+        function entrou() {
+            area.innerText = 'entrou!'
+            area.style.background = 'green'
+        }
+        function sair() {
+            area.innerText = 'saiu!'
+            area.style.background = 'red'
+        }
+    </script>
+</body>
+</html>

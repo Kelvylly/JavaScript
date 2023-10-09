@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        agora = new Date()
+diasem = agora.getMonth()
+/*
+00 = Janeiro
+01 = Fevereiro
+02 = Março
+03 = Abril
+04 = Maio
+05 = Junho
+06 = Julho
+07 = Agosto
+08 = Setembro
+09 = Outubro
+10 = Novembro
+11 = Dezembro
+*/
+console.log(diasem);
+switch (diasem) {
+        case 0:
+        document.write('Janeiro')
+        break;
+        case 1:
+        document.write('Fevereiro')
+        break;
+        case 2:
+        document.write('Março')
+        break;
+        case 3:
+        document.write('Abril')
+        break;
+        case 4:
+        document.write('Maio')
+        break;
+        case 5:
+        document.write('Junho')
+        break;
+        case 6:
+        document.write('Julho')
+        break;
+        case 7:
+        document.write('Agosto')
+        break;
+        case 8:
+        document.write('Setembro')
+        break;
+        case 9:
+        document.write('Outubro')
+        break;
+        case 10:
+        document.write('Novembro')
+        break;
+        case 11:
+        document.write('Dezembro')
+        break;
+
+    default:
+        console.log('[ERRO] Mês inválido')
+        break;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font:normal 18pt arial;
+            background-color: o;
+        }
+        main{
+            max-width:500px ;
+            margin: auto;
+
+        }
+        input{
+            font:normal 18pt arial;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>A onde você mora?</h1>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+    </main>
+    <script>
+        
+function verificar(){
+    var i = document.querySelector('input#pais')
+        var pais = (i.value)
+if (pais == 'Brasil'){
+    res.innerHTML += '<p> voce é Brasileiro</p>'
+    res.innerHTML += `<p> e esta vivendo no ${pais}</p>`
+}
+else{
+res.innerHTML += '<p> voce é estrageiro </p>'
+res.innerHTML += `<p>e esta vivendo em ${pais}</p>`
+}
+
+}
+
+    </script>
+</body>
+</html>

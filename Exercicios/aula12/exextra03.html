@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="clicou()">
+    <div id="resp"></div>
+    <script>
+        function clicou() {
+    var idade = document.getElementById('idade')
+    resp = document.querySelector('div#resp')
+    idade = (idade.value)
+        if(idade < 16) {
+            resp.innerHTML = `<p>Menores de <strong>16</strong> não podem votar</p>`
+        } else {
+            if(idade < 18) {
+                resp.innerHTML = `<p>Menores de <strong>18</strong> podem votar opicionalmente</p>`
+            } else
+                resp.innerHTML = `<p>Para maiores de <strong>18</strong> o voto é obrigatorio</p>`
+            }
+        }
+        </script>
+</body>
+</html>
